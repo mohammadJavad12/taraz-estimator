@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پیش‌بینی تراز آزمون</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>پیش‌بینی تراز آزمون</h1>
+            <p class="subtitle">درصدهای خود را وارد کنید تا تراز تخمینی را ببینید</p>
+
+            <div class="form-group">
+                <label for="exam">انتخاب آزمون</label>
+                <select id="exam">
+                    <option value="">در حال بارگذاری...</option>
+                </select>
+            </div>
+
+            <div id="subjects-container">
+                <!-- فیلدهای دروس به صورت داینامیک ساخته می‌شوند -->
+            </div>
+
+            <button id="predictBtn">پیش‌بینی تراز</button>
+
+            <div id="result" class="result"></div>
+            <div id="error" class="error"></div>
+        </div>
+
+        <p class="footer">
+            این ابزار یک <strong>تخمین آماری</strong> است و تراز رسمی آزمون نیست.
+        </p>
+    </div>
+
+    <!-- لیست مدل‌های موجود -->
+    <script src="js_models/list.js"></script>
+    
+    <!-- مدل‌ها به صورت داینامیک لود می‌شوند -->
+    <script src="app.js"></script>
+</body>
+</html>

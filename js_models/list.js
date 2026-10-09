@@ -1,0 +1,1 @@
+const AVAILABLE_EXAMS = ["data_maz"];
